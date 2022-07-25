@@ -31,7 +31,8 @@ Backstage | **B)** if(quality < 50) => quality = quality+1 <br> **C)** If(sellIn
 We can either replace the provided constructor by @AllArgsConstructor lombok annotation.
 
 
-***Test the solution***
+***<u>Test the solution</u>***
+
 Please run unit tests to test the source code.
 For the com.gildedrose.handle.TextTestFixture class, I didn't change the class logic to be able to compare the old version with the new one.<br>
 I created some test for this class to be able to run it as a unit test.
