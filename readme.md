@@ -20,7 +20,7 @@ Sulfuras | fixed: 80| no action (never expired)
 Backstage | **B)** if(quality < 50) => quality = quality+1 <br> **C)** If(sellIn<11 && quality < 50) => quality = quality+1 <br> **C)** If(sellIn<6 && quality < 50) => quality = quality+1 <br> **F)** If(sellIn<0) => quality = 0| **D)** sellIn = sellIn-1
 
 ***<u>Base source code problems</u>***
-1) As mentioned on the description, Conjured items are not handled properly
+1) As mentioned on the description, Conjured items are not handled properly. In fact, The quality should be decreesed twice as fast as a normal element.
 2) There is an error on the BackStage logic:<br>
     As you can see on the table, for those types (OtherItem, Conjured, AgedBrie), the sellIn is updated on the **D)** bloc before using it on tests.<br>
     On Backstage type:
