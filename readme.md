@@ -17,7 +17,7 @@ OtherItem | **A)** if(quality > 0) => quality = quality-1 <br> **G)** If(sellIn<
 Conjured | **A)** if(quality > 0) => quality = quality-2 <br> **G)** If(sellIn<0 && quality>0) => quality = quality-2| **D)** sellIn = sellIn-1
 AgedBrie |  **B)** If(quality<50) => quality+1 <br> **E)** if(sellIn < 0 && quality <50) => quality = quality+1| **D)** sellIn = sellIn-1
 Sulfuras | fixed: 80| no action (never expired)
-Backstage | **B)** if(quality < 50) => quality = quality+1 <br> **C)** If(sellIn<11) => quality = quality+1 <br> **C)** If(sellIn<6) => quality = quality+1 <br> **F)** If(sellIn<0) => quality = 0| **D)** sellIn = sellIn-1
+Backstage | **B)** if(quality < 50) => quality = quality+1 <br> **C)** If(sellIn<11 && quality < 50) => quality = quality+1 <br> **C)** If(sellIn<6 && quality < 50) => quality = quality+1 <br> **F)** If(sellIn<0) => quality = 0| **D)** sellIn = sellIn-1
 
 ***<u>Base source code problems</u>***
 1) As mentioned on the description, Conjured items are not handled properly
