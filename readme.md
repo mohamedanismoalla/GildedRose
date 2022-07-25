@@ -3,7 +3,9 @@
 
 ### Class Diagram
 
-![](src/main/resources/classDiagram.png)
+![Class Diagram](src/main/resources/classDiagram.png)
+
+<br>
 
 ###Need analysis
 
